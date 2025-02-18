@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* @font-face {
+  font-family: "Open Sans";
+  src: url(/font/OpenSans-VariableFont_wdth\,wght.ttf);
+} */
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* первый верхний блок */
+#section-first {
+  height: 535px;
+  background-color: #e4dcd6;
+}
+
+.header {
+  display: flex;
+  padding: 0 30px 0 40px;
+  justify-content: space-between;
+}
+
+/* второй блок */
+#section-second {
+  display: flex;
+  width: 1200px;
+  height: 661px;
+  background-color: #371b02;
+  justify-content: space-between;
+}
+
+/* левая вертикальная половинка */
+.left-half {
+  width: 50%;
+}
+
+.left-half_title {
+  padding-top: 31px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24.2px;
+  font-weight: 300;
+  line-height: 28.2px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.left-half_image {
+  padding-top: 49px;
+  width: 360px;
+  height: 216px;
+}
+
+.left-half_image {
+  /*  mix-blend-mode: multiply; /* наложение и смешивание цветов с родительский элементом*/
+  filter: grayscale(100%); /* фильтр в черно белый*/
+}
+
+/* правая вертикальная половинка */
+.right-half {
+}
+
+.right-half_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-half_nav {
+  padding-top: 41px;
+}
+.right-half_nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.right-half_nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+}
+
+.right-half_nav ul li:nth-child(1) {
+  margin-right: 26px;
+}
+.right-half_nav ul li:nth-child(2) {
+  color: red;
+  margin-right: 25px;
+}
+
+
+
+.right-half_phone {
+  padding-top: 38px;
+  height: 10px;
+}
+.right-half_phone a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.right-half_title {
+  margin-top: 77px;
+  width: 560px;
+  height: 76px;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.right-half_consultation {
+  padding-top: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.right-half_button {
+  cursor: pointer;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  width: 570px;
+  height: 48px;
+  border-radius: 2px;
+  background: #371b02;
+}
+
+.right-half_button a {
+  padding-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.right-half_button_line {
+  margin-right: 23px;
+  margin-left: 16px;
+  width: 416px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 1px;
+}
+
+.main-logo-text {
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+.main-logo-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 72px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #995218;
+}
+
+.main-logo-text h2:first-child {
+  width: 2056px;
+  margin-left: 242px; /*242 - 19px;  - потому что верхний блок в figme иммет не верный размер */
+}
+
+.main-logo-text h2:last-child {
+  width: 2056px;
+  margin-left: -895px; /* -895 - 19px; */
+  padding-top: 5px;
+}
+
+/* Нижняя секция */
+
+.about-us {
+
+  display: flex;
+  justify-content: flex-start;
+}
+/* левая часть */
+.about-us_left-half {
+  padding: 55px 139px 120px 40px;
+}
+
+.about-us_title {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31.2px;
+  color: #ffffff;
+  letter-spacing: 0%;
+}
+
+.about-us_img {
+  padding-top: 37px;
+  width: 241px;
+  height: 321px;
+}
+
+.about-us_name {
+  padding-top: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.about-us_jobtitle {
+  padding-top: 7px;
+  font-family: "Open Sans", sans-serif;
+  width: 241px;
+  height: 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #ffffff;
+}
+
+/* правая часть */
+.about-us_right-half {
+  padding-top: 120px;
+}
+
+.about-us_article-first {
+  width: 740px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+/* параграф */
+.about-us_article-second {
+  width: 742px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21.9px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+/* счетчик */
+.about-us_counter {
+  padding: 31px 0px 42px 0;
+  display: flex;
+  justify-content: space-between; 
+  list-style-type:none;
+}
+
+/* стили шрифта только для number в счетчике */
+.about-us_counter p:first-child {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: 0%;
+  color: #e4dcd6;
+}
+
+/* стили шрифта только для text в счетчике */
+.about-us_counter p:last-child {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28.4px;
+  letter-spacing: 0%;
+  color: #e4dcd6;
+}
+
+
+
+/* размеры и отступы каждого блока в счетчике */
+.block-first {
+  min-width: 155px;
+}
+.block-first p:nth-child(2) {
+  width: 110px;
+}
+
+
+.block-second {
+  width: 114px;
+  padding-right: 85px;
+}
+.block-third {
+  min-width: 219px;
+  padding-right: 14px;
+}
+.block-third p:nth-child(2) {
+  width: 164px;
+}
+
+.block-fifth {
+  width: 100%;
+}
