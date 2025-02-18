@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Аутсорсинг бухгалтерских услуг</title>
+    <title>{{ $title }}</title>
 </head>
 <body>
     <header>
@@ -73,7 +73,7 @@
                     розничная торговля.
                 </p>
                 {{--//! компонент: resources/views/components/counter/counter.blade.php  --}}
-                <x-counter.counter/>
+               <x-counter.counter/>
                 <p class="about-us_article-second">
                     За годы работы мы постоянно расширяли наши профессиональные
                     компетенции,<br />
