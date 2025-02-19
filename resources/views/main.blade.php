@@ -11,7 +11,7 @@
     <title>{{!! $title !!}}</title>
 </head>
 <body>
- {{ dd($counter)}}1
+ {{-- {{ dd($posts)}} --}}
     <header>
         <div id="section-first">
             <div class="header">
@@ -73,8 +73,9 @@
                     строительство, производство, общественное питание, оптовая и
                     розничная торговля.
                 </p>
-                {{--//! компонент: resources/views/components/counter/counter.blade.php  --}}
-               <x-counter.counter/>
+                {{--// компонент: resources/views/components/counter/counter.blade.php  --}}
+               {{-- <x-counter.counter />  --}}
+               {{-- {{view('components.counter.counter')}} --}}
                 <p class="about-us_article-second">
                     За годы работы мы постоянно расширяли наши профессиональные
                     компетенции,<br />

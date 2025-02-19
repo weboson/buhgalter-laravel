@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Counter;
+use App\Models\Posts;
 use Illuminate\View\View;
 
 class MainController extends Controller
@@ -13,7 +13,7 @@ class MainController extends Controller
         // метод view по умолчанию начинат смотерть папку 'view'
         return view('main', [
 
-            'counter' => Counter::all(), // вернуть все данные
+            'posts' => Posts::all(), // вернуть все данные
             'title' => 'Услуги бухгалтера' // для title в main.blade
         ]);
     }
