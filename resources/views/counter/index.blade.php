@@ -3,9 +3,13 @@
 
     <ul class="about-us_counter">
         @foreach($posts as $post)
-        <li class="block-first">
-            <p>{{ $post->title }}</p>
-            <p>{{ $post->article }}</p>
+        <li class="block-counter">
+            <div class="counter-title">
+                <p>{{ $post->title }}</p>
+            </div>
+            <div class="counter-article">
+                <p>{{ $post->article }}</p>
+            </div>
         </li>
         @endforeach
     </ul>

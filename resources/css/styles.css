@@ -31,7 +31,6 @@ body {
   width: 1200px;
   height: 661px;
   background-color: #371b02;
-  justify-content: space-between;
 }
 
 /* левая вертикальная половинка */
@@ -263,37 +262,40 @@ body {
 }
 /* счетчик */
 .about-us_counter {
-  padding: 31px 0px 42px 0;
+  padding: 29px 0px 42px 0;
   display: flex;
   justify-content: space-between; 
   list-style-type:none;
 }
 
-/* стили шрифта только для number в счетчике */
-.about-us_counter p:first-child {
+
+.counter-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 50.4px;
   letter-spacing: 0%;
   color: #e4dcd6;
+  min-width: 94px;
 }
 
-/* стили шрифта только для text в счетчике */
-.about-us_counter p:last-child {
+
+.counter-article {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 28.4px;
   letter-spacing: 0%;
   color: #e4dcd6;
+  width: 100px;
+  padding-top: 2px;
 }
 
 
 
 /* размеры и отступы каждого блока в счетчике */
 .block-first {
-  min-width: 155px;
+  /* min-width: 155px; */
 }
 .block-first p:nth-child(2) {
   width: 110px;

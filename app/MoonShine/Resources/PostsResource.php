@@ -21,7 +21,7 @@ class PostsResource extends ModelResource
 {
     protected string $model = Posts::class;
 
-    protected string $title = 'Статьи';
+    protected string $title = 'Статья';
 
     // Поле для отображения значений в связях и хлебных крошках
     protected string $column = 'id';
