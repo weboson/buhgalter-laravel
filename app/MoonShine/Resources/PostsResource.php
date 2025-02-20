@@ -33,8 +33,8 @@ class PostsResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
-            Text::make('title', 'title'),
-            Text::make('article', 'article'),
+            Text::make('title'),
+            Text::make('article'),
 
         ];
     }
@@ -46,8 +46,10 @@ class PostsResource extends ModelResource
     {
         return [
             Box::make([
-                ID::make(),
-            ])
+                ID::make()->sortable(),
+                Text::make('title'),
+                Text::make('article'),
+            ]),
         ];
     }
 
@@ -57,7 +59,8 @@ class PostsResource extends ModelResource
     protected function detailFields(): iterable
     {
         return [
-            ID::make(),
+            Text::make('Title', 'title'),
+            Text::make('article'),
         ];
     }
 
