@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>{{!! $title !!}}</title>
+    {{-- <title>{{!! $title !!}}</title> --}}
 </head>
 <body>
- {{-- {{ dd($posts)}} --}}
+    {{-- {{ dd($posts)}} --}}
     <header>
         <div id="section-first">
             <div class="header">
@@ -73,9 +73,8 @@
                     строительство, производство, общественное питание, оптовая и
                     розничная торговля.
                 </p>
-                {{--// компонент: resources/views/components/counter/counter.blade.php  --}}
-               {{-- <x-counter.counter />  --}}
-               {{-- {{view('components.counter.counter')}} --}}
+                {{-- Если изменил пути или имена файлов, то: ./vendor/bin/sail php artisan route:clear --}}
+                {{ $slot }}
                 <p class="about-us_article-second">
                     За годы работы мы постоянно расширяли наши профессиональные
                     компетенции,<br />

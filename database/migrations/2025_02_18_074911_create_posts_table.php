@@ -9,6 +9,11 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    protected $fillable = [
+        'title',
+        'article',
+    ];
+
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {

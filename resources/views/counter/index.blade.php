@@ -1,14 +1,15 @@
 {{-- счетчик - компонент --}}
+<x-layout>
 
-    <ul class="about-us_counter">
-    @foreach($posts as $post)
+        <ul class="about-us_counter">
+    {{-- @foreach($posts as $post)
             <li class="block-first">
             <p>{{ $post->$title}}</p>
             <p>лет опыта</p>
         </li>
-    @endforeach
+    @endforeach --}}
         <li class="block-first">
-            <p>{{ $title}}</p>
+            <p>5+</p>
             <p>лет опыта</p>
         </li>
         <li class="block-second">
@@ -24,3 +25,5 @@
             <p>решенных вопросов</p>
         </li>
     </ul>
+</x-layout>
+    
